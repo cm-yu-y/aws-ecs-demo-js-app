@@ -9,7 +9,7 @@ export const prodParameters: Parameters = {
   },
   vpc: {
     cidr: '10.1.0.0/16',
-    maxAzs: 3,
+    maxAzs: 2,
   },
   ecr: {
     repositoryName: 'demo-js-app',
@@ -18,7 +18,7 @@ export const prodParameters: Parameters = {
     taskDefinitionArnSsmParameter: '/ecs/aws-ecs-demo-js-app/prod/task-definition-arn',
     containerName: 'nginx',
     containerPort: 80,
-    desiredCount: 3,
+    desiredCount: 1,
   },
   alb: {
     port: 80,
